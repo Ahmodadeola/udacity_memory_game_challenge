@@ -1,0 +1,84 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    width: 75%;
+    margin: auto; 
+}
+
+main h2{
+    text-align: center;
+    font: lighter 1.3em verdana;
+    
+}
+
+i.fa, i.fab{
+    color: grey;
+}
+
+i.reset{
+    float: right;
+}
+
+section.cards{
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 3px grey, 3px 4px 3px grey;  
+    border-radius: 7px;
+    height: 450px;
+    background: radial-gradient(circle, rgb(100, 214, 195) 50%, rgb(25, 168, 114) 10%, rgb(18, 58, 192) 25%, rgb(15, 135, 190) 7%, rgb(224, 82, 105));
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+div.card{
+    border: 1px solid initial;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(42, 64, 126, 0.815);
+    vertical-align: middle;
+}
+
+div.card i{
+    color: white;
+    margin-top:28%;
+}
+
+div.card:hover{
+    box-shadow: 3px -4px 4px, -3px 4px 4px; 
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.match{
+    background-color: #f06;
+    animation: shrink 0.25s ease-out;
+}
+
+.mismatch{
+    background: red;
+    animation: shake 0.25s ease-in;
+}
+
+@keyframes shake{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-35deg)};
+}
+
+@keyframes shrink{
+    from{transform: scale(1, 1);}
+    to{transform: scale(1.5, 0.8);}
+}
+
+@media screen and (min-width: 900px){
+    main{
+        width: 45%;
+    }
+}
