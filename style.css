@@ -29,7 +29,12 @@ section.cards{
     box-shadow: 3px 4px 3px grey, 3px 4px 3px grey;  
     border-radius: 7px;
     height: 450px;
-    background: radial-gradient(circle, rgb(100, 214, 195) 50%, rgb(25, 168, 114) 10%, rgb(18, 58, 192) 25%, rgb(15, 135, 190) 7%, rgb(224, 82, 105));
+    background: radial-gradient(
+        rgba(21, 138, 89, 0.89) 45%,
+        rgba(25, 168, 113, 0.74) 20%, 
+        rgb(19, 151, 129) 35%,
+        rgb(22, 187, 63) 9%, 
+        rgb(65, 112, 184));
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -37,10 +42,9 @@ section.cards{
 }
 
 div.card{
-    border: 1px solid initial;
     text-align: center;
     border-radius: 5px;
-    background: rgba(42, 64, 126, 0.815);
+    background: rgba(26, 67, 179, 0.795);
     vertical-align: middle;
 }
 
@@ -79,6 +83,6 @@ div.card:hover{
 
 @media screen and (min-width: 900px){
     main{
-        width: 45%;
+        width: 550px;
     }
 }
