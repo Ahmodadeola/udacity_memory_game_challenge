@@ -92,7 +92,7 @@ let alpha = {
               localStorage.bestTime > data.gameTime
             ) {
               localStorage.setItem("bestTime", data.gameTime);
-              data.bestMoves = data.movesNo;
+              data.bestTime = data.movesNo;
             }
 
             view.showMsg();
